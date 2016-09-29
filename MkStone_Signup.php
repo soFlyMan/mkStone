@@ -24,7 +24,7 @@
     $qq=$_POST['qq'];
     $mail=$_POST['email'];
     include('connect.php');//链接数据库
-    $q="insert into user(AUTO_INCREMENT,username,password,qq,mail) values (null,'$name','$password','$qq','$mail')";//向数据库插入表单传来的值的sql
+    $q="insert into stone(AUTO_INCREMENT,usename,password,qq,mail) values (null,'$name','$password','$qq','$mail')";//向数据库插入表单传来的值的sql
     $reslut=mysql_query($q,$con);//执行sql
     
     if (!$reslut){
