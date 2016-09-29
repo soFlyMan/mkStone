@@ -14,28 +14,26 @@
              $result = mysql_query($sql);//执行sql
              $rows=mysql_num_rows($result);//返回一个数值
              if($rows){//0 false 1 true
-                   header("refresh:0;url=welcome.html");//如果成功跳转至welcome.html页面
+                   header("refresh:0;url=index.html");//如果成功跳转至index.html页面
                    exit;
              }else{
-                echo "用户名或密码错误";
+            
                 echo "
                     <script>
-                            setTimeout(function(){window.location.href='login.html';},1000);
+                         out.print("<script>alert('登陆失败!!');location.href='login_register.html'</script>")   
                     </script>
 
-                ";//如果错误使用js 1秒后跳转到登录页面重试;
+                ";
              }
              
 
-    }else{//如果用户名或密码有空
-                echo "表单填写不完整";
-                echo "
-                      <script>
-                            setTimeout(function(){window.location.href='login.html';},1000);
-                      </script>";
+    }else{
+                echo "<script>
+                         out.print("<script>alert('用户名或者密码没有填写!!');location.href='login_register.html'</script>") </script>";
+                
 
-                        //如果错误使用js 1秒后跳转到登录页面重试;
-    }
+                          
+   }
 
     mysql_close();//关闭数据库
 ?>
