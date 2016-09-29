@@ -15,9 +15,9 @@
 
     header("Content-Type: text/html; charset=utf8");
 
-    if(!isset($_POST['submit'])){
+    if(!isset($_POST[''])){
         exit("错误执行");
-    }//判断是否有submit操作
+    }//判断是否有前台表单验证成功之后的操作
 
     $name=$_POST['username'];//post获取表单里的name
     $password=$_POST['password'];//post获取表单里的password

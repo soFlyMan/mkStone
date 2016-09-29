@@ -19,7 +19,7 @@ include('MkStone_Connect.php');//链接数据库
              
                 echo "
                     <script>
-                            alert('用户名或者密码错误');location.href='login_register.html'</script>;
+                            alert('用户名或者密码错误');location.href='login_register.html'
                     </script>
 
                 ";//如果错误使用js 1秒后跳转到登录页面重试;
@@ -30,7 +30,7 @@ include('MkStone_Connect.php');//链接数据库
                
                 echo "
                       <script>
-                            alert('用户名或者密码为空');location.href='login_register.html'</script>;
+                            alert('用户名或者密码为空');location.href='login_register.html'
                       </script>";
 
                         //如果错误使用js 1秒后跳转到登录页面重试;
