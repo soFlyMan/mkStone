@@ -55,7 +55,7 @@ function getParam(pname) {
 
 
 var reMethod = "GET",
-	pwdmin = 6;
+	pwdmin = 10;
 
 $(document).ready(function() {
 
@@ -73,13 +73,13 @@ $(document).ready(function() {
 
 
 
-		if ($('#user').val().length < 4 || $('#user').val().length > 16) {
+		if ($('#user').val().length < 4 || $('#user').val().length > 20) {
 
 			$('#user').focus().css({
 				border: "1px solid red",
 				boxShadow: "0 0 2px red"
 			});
-			$('#userCue').html("<font color='red'><b>×用户名位4-16字符</b></font>");
+			$('#userCue').html("<font color='red'><b>×用户名位4-20字符</b></font>");
 			return false;
 
 		}
@@ -119,7 +119,7 @@ $(document).ready(function() {
 		}
 
 		var sqq = /^[1-9]{1}[0-9]{4,9}$/;
-		if (!sqq.test($('#qq').val()) || $('#qq').val().length < 5 || $('#qq').val().length > 12) {
+		if (!sqq.test($('#qq').val()) || $('#qq').val().length < 5 || $('#qq').val().length > 20) {
 			$('#qq').focus().css({
 				border: "1px solid red",
 				boxShadow: "0 0 2px red"
