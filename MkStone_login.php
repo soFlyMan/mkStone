@@ -20,17 +20,16 @@
             
                 echo "
                     <script>
-                         out.print("<script>alert('登陆失败!!');location.href='login_register.html'</script>")   
-                    </script>
+                    alert('登陆失败!!');location.href='login_register.html'</script>   
+                    
 
                 ";
              }
              
 
     }else{
-                echo "<script>
-                         out.print("<script>alert('用户名或者密码没有填写!!');location.href='login_register.html'</script>") </script>";
-                
+                echo "<script>alert('用户名或者密码没有填写!!');location.href='login_register.html'</script>;"
+           <     
 
                           
    }

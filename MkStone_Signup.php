@@ -31,7 +31,7 @@
         die('Error: ' . mysql_error());//如果sql执行失败输出错误
     }else{
         echo "<script>
-                         out.print("<script>alert('注册成功');location.href='login_register.html'</script>") </script>";//成功输出注册成功
+                         alert('注册成功');location.href='login_register.html'</script>";//成功输出注册成功
     }
 
     
