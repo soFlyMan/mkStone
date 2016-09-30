@@ -1,3 +1,14 @@
-git add git add git add git commit -m "前端添加注册验证cd ..cd ~/docgigit add git add clone https://github.com/soFlyMan/mkStone.ggit clone https://github.com/soFlyMan/mkStone.gitgitMkStone_Connect.php
-MkStone_login.php
-MkStone_Signup.php add git add git aadd git commit "同步git commit -m "1.0.2git push origin mastergit branch sjy-mkStonegit checkout sjgitstatusgit add git add MkStone_Connect.phpgit add MkStone_login.phpgit add MkStone_Signup.phpgit commit -m ""sssgit push origin sjy"""
+  <?php
+
+    $server="localhost";//主机
+    $db_username="root";//你的数据库用户名
+    $db_password="";//你的数据库密码
+
+    $con = mysql_connect($server,$db_username,$db_password);//链接数据库
+    if(!$con){
+        die("can't connect".mysql_error());//如果链接失败输出错误
+    }
+    
+    mysql_select_db('mkstone',$con);//选择数据库（我的是test）
+
+?>
