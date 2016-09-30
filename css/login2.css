@@ -140,7 +140,7 @@ input::-ms-clear {
 .web_login input.inputstyle2:focus,.web_login input.inputstyle:focus{border:1px solid #198BD4;box-shadow:0 0 2px #198BD4;}
 .web_login .inputstyle2 {
 	width:200px;
-	height:34px;
+	height:32px;
 	padding-left:5px;
 	line-height:34px;
 	border:1px solid #D7D7D7;
