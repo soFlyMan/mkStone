@@ -11,4 +11,8 @@
     
     mysql_select_db('mkstone',$con);//选择数据库（我的是test）
 
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> 765df7a6dbd862e76b508f99176dad235194ec53
