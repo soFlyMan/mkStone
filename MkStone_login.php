@@ -26,14 +26,6 @@ include('MkStone_Connect.php');//链接数据库
              }
              
 
-    }else{//如果用户名或密码有空
-               
-                echo "
-                      <script>
-                            alert('用户名或者密码为空');location.href='login_register.html'
-                      </script>";
-
-                        //如果错误使用js 1秒后跳转到登录页面重试;
-
+    }
     mysql_close();//关闭数据库
 ?>
