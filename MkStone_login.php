@@ -9,11 +9,11 @@ include('MkStone_Connect.php');//链接数据库
     $passowrd = $_POST['password'];//post获得用户密码单值
 
     if ($name && $passowrd){//如果用户名和密码都不为空
-             $sql = "select * from user where usename = '$name' and password='$passowrd'";//检测数据库是否有对应的username和password的sql
+             $sql = "select * from stone where usename = '$name' and password='$passowrd'";//检测数据库是否有对应的username和password的sql
              $result = mysql_query($sql);//执行sql
              $rows=mysql_num_rows($result);//返回一个数值
              if($rows){//0 false 1 true
-                   header("refresh:0;url=welcome.html");//如果成功跳转至welcome.html页面
+                   header("refresh:0;url=index.html");//如果成功跳转至welcome.html页面
                    exit;
              }else{
              
